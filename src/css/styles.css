@@ -21,18 +21,28 @@
 }
 
 .footer-content .social-media .social-icon img {
-    width: 24px;
-    height: 24px;
+    width: 1px; /* Smaller size for social media icons */
+    height: 1px; /* Smaller size for social media icons */
 }
 
 .footer-content .contact-info, .footer-content .quick-links {
     margin: 0.5em 0;
 }
 
+.footer-content .quick-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+
+.footer-content .quick-links ul li {
+    display: inline;
+}
+
 .footer-content .quick-links a {
     color: white;
     text-decoration: none;
-    margin: 0 0.5em;
 }
 
 .footer-content .quick-links a:hover {
