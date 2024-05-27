@@ -1,5 +1,4 @@
-/* Header Styles */
-header {
+/* header {
     background-color: #333;
     padding: 1em;
     width: 100%;
@@ -9,8 +8,8 @@ header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Use flexbox to make the navbar horizontal */
-    justify-content: center; /* Center the navbar items */
+    display: flex;
+    justify-content: center;
 }
 
 header nav ul li {
@@ -27,7 +26,6 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Footer Styles */
 .footer-content {
     display: flex;
     flex-direction: column;
@@ -79,4 +77,4 @@ header nav ul li a:hover {
 
 .footer-content .quick-links a:hover {
     text-decoration: underline;
-}
+} */
