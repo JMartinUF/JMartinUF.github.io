@@ -1,3 +1,33 @@
+/* Header Styles */
+header {
+    background-color: #333;
+    padding: 1em;
+    width: 100%;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to make the navbar horizontal */
+    justify-content: center; /* Center the navbar items */
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
 .footer-content {
     display: flex;
     flex-direction: column;
@@ -13,6 +43,8 @@
 }
 
 .footer-content .social-media {
+    display: flex;
+    justify-content: center;
     margin: 1em 0;
 }
 
@@ -21,8 +53,8 @@
 }
 
 .footer-content .social-media .social-icon img {
-    width: 1px; /* Smaller size for social media icons */
-    height: 1px; /* Smaller size for social media icons */
+    width: 100px;
+    height: 100px;
 }
 
 .footer-content .contact-info, .footer-content .quick-links {
