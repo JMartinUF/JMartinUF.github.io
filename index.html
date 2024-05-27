@@ -3,28 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LTJ</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Home - James</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Favicon -->
     <link rel="icon" href="src/img/favicon.png" type="image/png">
 </head>
 <body>
-    <div id="header"></div>
-
+    <header>
+        <!-- Header content will be fetched and inserted here -->
+    </header>
+    
     <main>
+        <!-- Main content goes here -->
         <h1>Welcome to My Website</h1>
         <p>Hello! I'm James. This is a simple HTML page.</p>
     </main>
 
-    <div id="footer"></div>
+    <footer>
+        <!-- Footer content will be fetched and inserted here -->
+    </footer>
 
     <script>
         fetch('header.html')
             .then(response => response.text())
-            .then(data => document.getElementById('header').innerHTML = data);
+            .then(data => document.querySelector('header').innerHTML = data);
 
         fetch('footer.html')
             .then(response => response.text())
-            .then(data => document.getElementById('footer').innerHTML = data);
+            .then(data => document.querySelector('footer').innerHTML = data);
     </script>
 </body>
 </html>

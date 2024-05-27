@@ -1,0 +1,29 @@
+/* Footer Styles */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+}
+
+.footer-content p, .footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content .social-media {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.footer-content .social-media .social-icon {
+    margin: 0 0.5em;
+}
+
+.footer-content .social-media .social-icon img {
+    width: 100px;
+    height: 100px;
+}
