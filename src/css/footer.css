@@ -1,33 +1,22 @@
 /* Footer Styles */
 .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 1em;
     background-color: #333;
     color: white;
-    width: 100%;
-    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+    text-align: center;
+    width: 100vw; /* Ensure the footer spans the full width of the viewport */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
-.footer-content p, .footer-content a {
-    color: white;
-    text-decoration: none;
+.social-media {
+    margin-bottom: 1em;
 }
 
-.footer-content .social-media {
-    display: flex;
-    justify-content: center;
-    margin: 1em 0;
-}
-
-.footer-content .social-media .social-icon {
+.social-media .social-icon {
     margin: 0 0.5em;
 }
 
-.footer-content .social-media .social-icon img {
-    width: 100px;
-    height: 100px;
-    border-radius: 0; /* Ensure the images are not round */
-    object-fit: cover; /* Ensure the image covers the area without distortion */
+.social-media .social-icon img {
+    width: 24px;
+    height: 24px;
 }
