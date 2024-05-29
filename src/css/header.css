@@ -1,29 +1,88 @@
 /* Header Styles */
-header {
-    background-color: #333;
-    padding: 1em 0;
-    width: 100vw; /* Ensure the header spans the full width of the viewport */
-    box-sizing: border-box; /* Include padding in the element's total width and height */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light Grey */
+    color: #333; /* Dark Grey */
 }
 
-header nav ul {
-    list-style: none;
+nav.vertical-nav {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background: #267738; /* Green */
+    padding-top: 1em;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Black Shadow */
+    z-index: 1000;
+    overflow-y: auto; /* Allows scrolling if content is too long */
+}
+
+nav.vertical-nav .logo {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+nav.vertical-nav .logo img {
+    max-height: 90px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    /* margin: 0 auto; */
+}
+
+nav.vertical-nav ul {
+    list-style: none;
     padding: 0;
     margin: 0;
+    flex-grow: 1;
 }
 
-header nav ul li {
-    margin: 0 1em;
+nav.vertical-nav ul li {
+    margin: 0.5em 0;
 }
 
-header nav ul li a {
-    color: white;
+nav.vertical-nav ul li a {
+    display: block;
+    color: #fff; /* White */
     text-decoration: none;
-    font-weight: bold;
+    padding: 8px 16px;
+    transition: background 0.3s, color 0.3s;
+    text-align: left;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
+nav.vertical-nav ul li a:hover,
+nav.vertical-nav ul li a.active {
+    background: #31a54b; /* Lighter Green */
+    color: #fff; /* White */
+}
+
+nav.vertical-nav .social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em; /* Add space at the top */
+}
+
+nav.vertical-nav .social-media .social-icon {
+    margin: 0 0.5em;
+}
+
+nav.vertical-nav .social-media .social-icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+nav.vertical-nav .copyright {
+    text-align: center;
+    color: #fff;
+    margin-top: 1em;
+    font-size: 0.9em;
+    flex-shrink: 0;
 }

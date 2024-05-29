@@ -1,0 +1,43 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light Grey */
+    color: #333; /* Dark Grey */
+}
+
+main {
+    margin-left: 220px; /* Space for the vertical nav */
+    padding: 2em 1em;
+    background-color: #fff; /* White */
+}
+
+h2,
+h3 {
+    color: #333; /* Dark Grey */
+}
+
+section {
+    background: #fff; /* White */
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Black Shadow */
+}
+
+section p,
+section ul {
+    text-align: left; /* Aligns paragraphs and lists to the left for better readability */
+    max-width: 800px; /* Limits the width of the content for better readability */
+}
+
+footer .social-media a {
+    margin: 0 0.5em;
+    color: #fff; /* White */
+}
+
+footer .social-media a img {
+    width: 24px;
+    height: 24px;
+}
